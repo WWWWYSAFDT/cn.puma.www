@@ -1,0 +1,596 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app {
+  position: relative;
+  /* overflow: hidden; */
+  max-width: 100%;
+  height: 1000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+/* 顶部 */
+.headpiece {
+  width: 100%;
+  background: #fff;
+}
+
+.headpiece-ding {
+  width: 100%;
+  height: 92px;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+/* 顶部左边部份 */
+.headpiece-ding .nav-lt {
+  height: 100%;
+  margin: 3px 0;
+  display: flex;
+  float: left;
+  justify-content: flex-start;
+}
+
+.headpiece-ding .nav-lt .nav-lt-fl {
+  padding: 0 30px;
+  border-right: 1px solid #ccc;
+  border-radius: 0;
+  display: flex;
+  box-align: center;
+  align-items: center;
+}
+
+.headpiece-ding .nav-lt .nav-lt-fl .icon {
+  width: 66px;
+  height: 54px;
+  background-image: url(../image/index/bt.png);
+}
+
+.headpiece-ding .nav-lt .menu {
+  align-self: center;
+  height: 100%;
+  display: flex;
+  box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+.headpiece-ding .nav-lt .menu .linkBox a {
+  padding: 0 20px;
+  border-right: 1px solid #ccc;
+  letter-spacing: 1.07px;
+  font-size: 20px;
+  color: #222;
+}
+
+.headpiece-ding .nav-lt .menu .linkBox a span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.headpiece-ding .nav-lt .menu .linksst {
+  padding: 0 20px;
+}
+
+.headpiece-ding .nav-lt .menu .linksst span {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222;
+}
+
+/* .headpiece-ding .nav-lt .menu .linksst span:hover{
+
+} */
+
+/* 移动显示内容 */
+
+
+
+
+
+
+
+/* 顶部右边部份 */
+.nav-rt {
+  display: flex;
+  float: right;
+  height: 100%;
+  display: flex;
+}
+
+.nav-rt .links {
+  align-self: center;
+
+}
+
+.nav-rt .links a {
+  font-size: 12px;
+  color: #222;
+  letter-spacing: .3px;
+  padding-right: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 128px;
+  white-space: nowrap;
+}
+
+.nav-rt .links a img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.nav-rt .links a span {
+  display: inline-block;
+  font-size: 12px;
+  color: #222;
+}
+
+
+.nav-rt .search {
+  padding: 0 35px;
+  border-left: 1px solid #ccc;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-rt .search .search-ts {
+  width: 22px;
+  height: auto;
+  color: #000;
+  font-size: 21px;
+}
+
+
+.nav-rt .mini-carmini-cart {
+  padding: 0 21px 0 25px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ccc;
+}
+
+
+.nav-rt .cart {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-rt .cart i {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav-rt .cart a {
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* 文字导航 */
+.slider-box {
+  width: 100%;
+  height: 50px;
+  padding-top: 92px;
+  background-color: #eee;
+}
+
+.slider:hover .arrow {
+  display: block;
+}
+
+.slider {
+  width: 680px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider li {
+  width: 100%;
+  position: absolute;
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slider li h2 {
+  color: #222;
+  font-size: 12px;
+  text-align: center;
+}
+
+.slider a:first-child {
+  display: block;
+}
+
+
+.slider:hover .arrow {
+  display: block;
+}
+
+
+.arrow-left,
+.arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* 返回顶部按钮 */
+
+.cp-back-to-top {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  text-align: center;
+  z-index: 9;
+  line-height: 40px;
+  cursor: pointer;
+  bottom: 90px;
+  right: 20px;
+}
+
+.cp-back-to-top .iconfont {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+
+.cp-back-to-top .iconfont img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 男子黄色体恤  */
+
+.activity {
+  position: relative;
+  width: 100%;
+  height: 1158px;
+  margin-bottom: 30px;
+}
+
+.activity a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 男子黄色体恤左边导航 */
+
+.activity-flet {
+  position: absolute;
+  align-items: flex-start;
+  left: 4.3%;
+  top: 50%;
+  z-index: 2;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+.activity-flet h1 {
+  font-size: 48pt;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.activity-flet h3 {
+  font-size: 18pt;
+  text-align: left;
+  font-weight: 500;
+}
+
+.activity-flet .activity-fl {
+  box-sizing: border-box;
+}
+
+.activity-flet .activity-fl .clp-btn-white {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: #222;
+  background: #fff;
+  zoom: 1;
+  font-weight: 700;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 0;
+  letter-spacing: 1px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* 杨洋系列 */
+
+.fullBleedHero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.fullBleedHero a {
+  width: 100%;
+  height: 100%;
+}
+
+.fullBleedHero a img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 右边导栏 */
+.activity-right {
+  position: absolute;
+  right: 4.3%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #222;
+  z-index: 2;
+}
+
+.activity-right h1 {
+  font-size: 48pt;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.activity-right h3 {
+  font-size: 18pt;
+  text-align: left;
+  font-weight: 500;
+  color: #fff;
+}
+
+.activity-right .activity-fl {
+  box-sizing: border-box;
+}
+
+.activity-right .activity-fl .clp-btn-white {
+  display: block;
+  margin-bottom: 20px;
+  /* margin-right: 20px; */
+  color: #222;
+  background: #fff;
+  zoom: 1;
+  font-weight: 700;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  letter-spacing: 1px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+/* 限定篮球鞋  */
+
+.activiss {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.activiss a img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 蔡依林系列 */
+
+.cylHero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.cylHero a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 蔡依林系列中间导航 */
+.activity-center {
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: auto;
+  color: #222;
+  z-index: 2;
+
+}
+
+.activity-center h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 48pt;
+  font-weight: 700;
+}
+
+.activity-center h3 {
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+
+.activity-zj {
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+.activity-zj .clp-btn-white {
+  display: block;
+  margin-right: 20px;
+  color: #fff;
+  background: #000;
+  zoom: 1;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 20px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px auto;
+}
+
+/* 潮流  */
+.scksfd {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.scksfd a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 资源一线 */
+
+.mdmsfdsd {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.mdmsfdsd a img {
+  width: 100%;
+  height: 100%;
+}
+/* 资源一线左边导航  */
+
+.mdmsfdsd .activity-flet {
+  position: absolute;
+  align-items: flex-start;
+  left: 4.3%;
+  top: 50%;
+  z-index: 2;
+  color: #000;
+  transform: translateY(-50%);
+}
+
+.mdmsfdsd .activity-flet h1 {
+  font-size: 48pt;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 700;
+}
+
+.mdmsfdsd .activity-flet h3 {
+  font-size: 18pt;
+  text-align: left;
+  font-weight: 500;
+}
+
+.mdmsfdsd .activity-flet .activity-fl {
+  box-sizing: border-box;
+}
+
+.mdmsfdsd .activity-flet .activity-fl .clp-btn-white {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: #fff;
+  background: #000;
+  zoom: 1;
+  font-weight: 700;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 0;
+  letter-spacing: 1px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
