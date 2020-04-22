@@ -812,3 +812,301 @@ h6 {
 }
 
 /* 底部 */
+.cp-footer {
+  width: 100%;
+  display: block;
+  background: #eee;
+}
+
+/* 底部黑色顶部 */
+.top-wrap {
+  width: 100%;
+  background: #222;
+}
+
+.top-wrap .top {
+  height: 120px;
+  line-height: 120px;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.top-wrap .top .router-link-active {
+  position: absolute;
+  top: 20px;
+  float: left;
+}
+
+
+.top-wrap .top a .icon-footer-logo-m {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+
+.top-wrap .top .booking {
+  float: right;
+  /* display: flex; */
+  display: -webkit-box;
+  align-items: center;
+}
+
+.top-wrap .top .booking .tit {
+  /* display: flex; */
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+
+.top-wrap .top .booking .tit .icon-ico-email-m {
+  display: inline-block;
+  color: #fff;
+  line-height: 17px;
+  margin-right: 20px;
+}
+
+.top-wrap .top .booking .tit .icon-ico-email-m img {
+  padding-right: 8px;
+}
+
+.top-wrap .top .booking .tit .icon-ico-email-m p {
+  display: inline-block;
+}
+
+
+.top-wrap .top .ipt-box {
+  display: flex;
+  width: 290px;
+  height: 40px;
+  margin: auto;
+}
+
+.top-wrap .top .ipt-box .ipt-control {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-box-flex: 1;
+}
+
+.top-wrap .ipt-box .ipt-control .cafe-input {
+  float: left;
+  flex: 1;
+  border: none;
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.top-wrap .top .ipt-box button {
+  width: 50px;
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+  border: none;
+  background: #cccccc;
+
+}
+
+.top-wrap .top .ipt-box .icon-arrow-wd img {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+/* 底部导航 */
+.content-wrap {
+  width: 100%;
+  background-color: #eee;
+}
+.content-ss{
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 24px;
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+
+.contact {
+  width: 400px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.content-wrap .contact h4 {
+  width: 100%;
+  height: 68px;
+  display: -webkit-box;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+  color: #222;
+  letter-spacing: .93px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+  padding-top: 10px;
+}
+
+
+.content-wrap .contact p {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.content-wrap .contact h4 img {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.content-wrap .contact p img span {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #222;
+  font-weight: 700;
+
+}
+
+.content-wrap .contact .listbox {
+  box-sizing: border-box;
+
+}
+
+.content-wrap .contact .listbox .item {
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.content-wrap .contact .listbox .delectMargin {}
+
+
+.content-wrap .contact .listbox .addImgpadding {
+  padding-left: 33px
+}
+
+.content-wrap .contact .listbox .addMargin {
+  margin-bottom: 18px;
+}
+
+.content-wrap .contact .listbox p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.content-wrap .contact .listbox p a {
+  font-size: 13px;
+  color: #222;
+  letter-spacing: .81px;
+  cursor: auto !important;
+  text-decoration: none !important;
+}
+
+.content-wrap .contact .listbox img {
+  /* float: left; */
+  width: 20px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 0;
+}
+
+/* 商业标  */
+.copy-right-wrap{
+  width: 100%;
+    background: #eee;
+    padding: 30px 0;
+}
+
+.copy-right{
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  padding: 0 10px;
+  position: relative
+}
+.copy-right .lt{
+    display: flex;
+    flex-direction: column;
+}
+
+.copy-right .lt p{
+  font-size: 10px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* .copy-right .lt  .more{
+
+} */
+
+.copy-right .lt  .more p{
+  margin-right: 6px;
+  font-size: 10px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+
+.copy-right .lt  .none-sm{
+  position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    width: 100%;
+    padding-left: 240px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+
+.copy-right .lt  .none-sm>p{
+  display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-right: 37px;
+}
+
+.copy-right .lt  .none-sm p a{
+  color: #222;
+}
+
+.copy-right .lt  .none-sm p a span{
+  display: inline-block;
+    vertical-align: middle;
+}
+
+.copy-right .lt  .none-sm p a span img{
+  width: 18px;
+  height: auto;
+  margin-right: 6px;
+}
+
+.footerShare{
+  position: absolute;
+  right: 0;
+margin-top: 20px;
+}
+
+.footerShare a{
+  margin: 0 12px;
+}
+.footerShare a img{
+  max-height: 18px;
+}
