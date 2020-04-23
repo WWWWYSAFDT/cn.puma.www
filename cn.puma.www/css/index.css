@@ -60,7 +60,7 @@ h6 {
 .headpiece-ding .nav-lt .nav-lt-fl .icon {
   width: 66px;
   height: 54px;
-  background-image: url(../image/index/bt.png);
+  background-image: url(./image/index/bt.png);
 }
 
 .headpiece-ding .nav-lt .menu {
@@ -95,14 +95,6 @@ h6 {
   font-size: 20px;
   color: #222;
 }
-
-/* .headpiece-ding .nav-lt .menu .linksst span:hover{
-
-} */
-
-/* 移动显示内容 */
-
-
 
 
 
@@ -209,6 +201,10 @@ h6 {
   height: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
 }
 
 .slider ul {
@@ -218,24 +214,32 @@ h6 {
   padding: 0;
 }
 
+.slider>li:first-child{
+  display: block;
+}
 .slider li {
   width: 100%;
-  position: absolute;
   display: none;
+  position: absolute;
   text-align: center;
   font-size: 12px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   -ms-flex-align: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.slider li h2 {
+.slider a  h2:last-child{
+  display: block;
+}
+
+
+.slider li a h2 {
   color: #222;
   font-size: 12px;
   text-align: center;
+  display: none;
 }
-
 .slider a:first-child {
   display: block;
 }
@@ -372,7 +376,7 @@ h6 {
 .fullBleedHero {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
   margin-bottom: 30px;
 }
 
@@ -620,30 +624,30 @@ h6 {
 }
 
 
-.homeCutOut .cp-homeCutOut-item .content {
+.homeCutOut .cp-homeCutOut-item .contentdd {
   text-align: center;
   margin-bottom: 35px;
 }
 
-.homeCutOut .cp-homeCutOut-item .content h1 {
+.homeCutOut .cp-homeCutOut-item .contentdd h1 {
   font-weight: 700;
   font-size: 22px;
   color: #222;
   margin: 22px 0 9px;
 }
 
-.homeCutOut .cp-homeCutOut-item .content h3 {
+.homeCutOut .cp-homeCutOut-item .contentdd h3 {
   font-size: 16px;
   color: #222;
 }
 
-.homeCutOut .cp-homeCutOut-item .content .link-btn {
+.homeCutOut .cp-homeCutOut-item .contentdd .link-btn {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.homeCutOut .cp-homeCutOut-item .content .link-btn .link-box {
+.homeCutOut .cp-homeCutOut-item .contentdd .link-btn .link-box {
   display: block;
 
   color: #fff;
@@ -837,7 +841,7 @@ h6 {
 
 .top-wrap .top .router-link-active {
   position: absolute;
-  top: 20px;
+  top: 10px;
   float: left;
 }
 
