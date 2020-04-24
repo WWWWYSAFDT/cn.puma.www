@@ -34,18 +34,18 @@
       // 3.自动走(往左走)
       setInterval(function () {
           $('.arrow-right').click();
-      }, 3000)
+      }, 2000)
 
 
 
 
-      
+
       // 功能1: 当滚动条到一定位置 让返回顶部显示 否则隐藏
       // 给window添加滚动条 滚动事件(scroll)
       $(document).scroll(function () {
           // 获取页面的卷曲的高度
-          // 判断页面跑出浏览器顶部的高度 是不是大于600
-          if ($(document).scrollTop() >= 600) {
+          // 判断页面跑出浏览器顶部的高度 是不是大于500
+          if ($(document).scrollTop() >= 500) {
               // 如果大于500 让返回顶部按钮 显示
               $('.cp-back-to-top').show();
           } else {
@@ -61,4 +61,3 @@
       })
 
   })
-

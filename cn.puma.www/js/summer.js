@@ -1,6 +1,4 @@
 $(function () {
-
-
     // 0.准备工作
     // 0.1 声明变量 用来记录点击次数
     let index = 0;
@@ -36,8 +34,6 @@ $(function () {
         $('.arrow-right').click();
     }, 3000)
 
-
-
     // 功能1: 当滚动条到一定位置 让返回顶部显示 否则隐藏
     // 给window添加滚动条 滚动事件(scroll)
     $(document).scroll(function () {
@@ -57,4 +53,3 @@ $(function () {
     })
 
 })
-

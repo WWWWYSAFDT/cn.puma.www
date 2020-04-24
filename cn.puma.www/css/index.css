@@ -7,7 +7,7 @@ a {
   cursor: pointer;
 }
 
-.app {
+#app {
   position: relative;
   /* overflow: hidden; */
   max-width: 100%;
@@ -214,8 +214,8 @@ h6 {
   padding: 0;
 }
 
-.slider>li:first-child{
-  display: block;
+.slider li:first-child{
+  display: block; 
 }
 .slider li {
   width: 100%;
@@ -229,7 +229,7 @@ h6 {
   /* align-items: center; */
 }
 
-.slider a  h2:last-child{
+.slider a  h2:first-child{
   display: block;
 }
 
