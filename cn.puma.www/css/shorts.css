@@ -855,7 +855,7 @@ li {
     background: none;
     z-index: 5;
     left: 0;
-    top: 50%;
+    top: 40%;
   }
   
   .box .prev img {
@@ -870,7 +870,7 @@ li {
     height: 72px;
     background: none;
     z-index: 5;
-    top: 50%;
+    top: 40%;
     margin-left: 20px;
   }
   
